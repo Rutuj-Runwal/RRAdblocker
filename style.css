@@ -206,6 +206,16 @@ header .container {
   line-height: 1.4;
 }
 
+.cta-link {
+  display: inline-block;
+  font-size: 0;
+}
+
+.cta-extension {
+  max-height: 58px;
+  border-radius: 20px;
+}
+
 .text {
   color: var(--lightOne);
   font-size: 1.1rem;
