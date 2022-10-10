@@ -9,6 +9,29 @@
   --lightOne: #ccc;
   --lightTwo: #e7e3e3;
 }
+:root {
+  --color-primary: #191d2b;
+  --color-white: #FFFFFF;
+  --color-grey-2: #b2becd;   
+  --color-grey-4: #454e56;
+  --color-grey-5: #0f479a;
+  --color-grey-6: #191d2b;
+  --color-grey-7: #192e3a;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+
+.light-mode {
+  --color-primary: #FFFFFF;
+  --color-white: #454e56;
+  --color-grey-2: #6c7983;
+  --color-grey-4: #454e56; 
+  --color-grey-5: #f0f0f0; 
+  --color-grey-6: #F5F5F5;
+  --color-grey-7: #f0f0f0;
+
+}
+
 
 *,
 *::before,
@@ -24,6 +47,7 @@ html{
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--color-grey-6);
 }
 
 .stop-scrolling {
@@ -56,7 +80,7 @@ a {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: var(--backgroundColor);
+  background-color: var(--color-grey-7);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,7 +125,7 @@ header .container {
 }
 
 .logo h3 {
-  color: var(--darkTwo);
+  color: var(--color-white);
   font-size: 1.55rem;
   line-height: 1.2;
   font-weight: 700;
@@ -114,7 +138,7 @@ header .container {
 }
 
 .links a {
-  color: var(--lightTwo);
+  color: var(--color-white);
   margin-left: 4.5rem;
   display: inline-block;
   transition: 0.3s;
@@ -201,7 +225,7 @@ header .container {
 
 .big-title {
   font-size: 1.4rem;
-  color: var(--darkOne);
+  color: var(--color-white);
   text-transform: capitalize;
   line-height: 1.4;
 }
@@ -371,8 +395,8 @@ header .container {
 }
 
 .counters {
-	background: #0f479a;
-	color: #fff;
+	background: var(--color-grey-5);
+	color: var(--color-white);
 	border-top: 3px lightskyblue solid;
   padding: 10px;
 }
@@ -552,7 +576,13 @@ header .container {
 footer{
   padding-top: 50px;
   padding-bottom: 20px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
   font-weight:510;
+}
+.ashu img{
+  margin-top: 10px;
+  border-radius: 3%;
 }
 .beat{
   color: red;
@@ -743,4 +773,54 @@ footer{
   .showcase-area .btn {
     font-size: 0.8rem;
   }
+}
+:root {
+  --color-primary: #191d2b;
+  --color-white: #FFFFFF;
+  --color-grey-2: #b2becd;   
+  --color-grey-4: #454e56;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+
+.light-mode {
+  --color-primary: #FFFFFF;
+  --color-white: #454e56;
+  --color-grey-2: #6c7983;
+  --color-grey-4: #454e56; 
+}
+
+
+/* body {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: all 0.4s ease-in-out;
+} */
+
+
+
+.themee-btnn {
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+
+.themee-btnn:active {
+  transform: translateY(-3px);
+}
+
+.themee-btnn i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
 }
