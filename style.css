@@ -965,59 +965,16 @@ footer{
   max-width: 60%;
   margin-top: 20px ;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 18px;
   color: #cacdd2;
+}
+.footer-content p a{
+  color: #4bdedc;
+}
+.footer-content p a:hover{
+  color: #4bc3de;
 }
 .footer-content li{
   margin-left: 10px;
   font-size: 10px;
-}
-.footer-bottom{
-  background: #000;
-  width: 100vw;
-  padding: 20px;
-padding-bottom: 40px;
-  text-align: center;
-}
-.footer-bottom p{
-float: left;
-  font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-}
-.footer-bottom p a{
-color:#3fffef;
-font-size: 16px;
-text-decoration: none;
-}
-.footer-bottom span{
-  text-transform: uppercase;
-  opacity: .4;
-  font-weight: 200;
-}
-.footer-menu{
-float: right;
-
-}
-.footer-menu ul{
-display: flex;
-}
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
-}
-.footer-menu ul li a{
-color: #cfd2d6;
-text-decoration: none;
-}
-.footer-menu ul li a:hover{
-color: #3fffef;
-}
-    
-@media (max-width:500px) {
-.footer-menu ul{
-display: flex;
-margin-top: 10px;
-margin-bottom: 20px;
-}
 }
