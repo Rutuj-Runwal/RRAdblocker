@@ -1,11 +1,4 @@
 // Select The Elements
-(function () {
-    
-    document.querySelector(".themee-btnn").addEventListener("click", () => {
-      document.body.classList.toggle("light-mode");
-      document.getElementsByClassName("bar")[0].classList.toggle('collapsed')
-    })
-})();
 var toggle_btn;
 var big_wrapper;
 var hamburger_menu;
